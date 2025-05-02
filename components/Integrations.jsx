@@ -6,50 +6,42 @@ import { fadeInOnScoll, fadeInUpSpring } from "@/motion/motionVariants";
 
 const icons = [
     {
-        src: "/integrations/notion.svg"
+        src: "/integrations/img1.png"
     },
     {
-        src: "/integrations/slack.svg"
+        src: "/integrations/img2.png"
     },
     {
-        src: "/integrations/google_drive.svg"
+        src: "/integrations/img3.png"
     },
     {
-        src: "/integrations/intercom.svg"
+        src: "/integrations/img4.png"
     },
     {
-        src: "/integrations/dropbox.svg"
+        src: "/integrations/img5.png"
     },
     {
-        src: "/integrations/stripe.svg"
+        src: "/integrations/img6.png"
     },
     {
-        src: "/integrations/zapier.svg"
+        src: "/integrations/img7.png"
     },
     {
-        src: "/integrations/figma.svg"
+        src: "/integrations/img8.png"
     },
     {
-        src: "/integrations/confluence.svg"
+        src: "/integrations/img9.png"
     },
     {
-        src: "/integrations/mailchimp.svg"
+        src: "/integrations/img10.png"
     },
     {
-        src: "/integrations/whatsapp.svg"
+        src: "/integrations/img11.png"
     },
     {
-        src: "/integrations/discord.svg"
+        src: "/integrations/img12.png"
     },
-    {
-        src: "/integrations/bitbucket.svg"
-    },
-    {
-        src: "/integrations/invision.svg"
-    },
-    {
-        src: "/integrations/evernote.svg"
-    },
+
 ]
 
 const iconAnimation = {
@@ -76,8 +68,9 @@ const Integrations = () => {
                   initial="hidden"
                   whileInView="visible"
                   className="text-center">
-                    <h2 className="h2 mb-3"> Unified Workflows</h2>
-                    <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
+                    <h2 className="h2 mb-3 text-black">خدماتنا</h2>
+                    <h2 className="lead text-black">نحن نتخصص في تنظيم الفعاليات المبتكرة وتقديم تجارب فريدة ومميزة. يقوم فريقنا المؤهل وذو الخبرة بتحويل أي
+                        مناسبة إلى لحظات لا تنسى. يدير الحدث الخاص بك خبراء محترفون ملتزمون بأدق التفاصيل، لذا استمتع بتجربة رائعة وممتعة دون قلق.</h2>
                 </motion.div>
                 {/* icon list */}
                 <div className=" flex flex-wrap gap-8 w-full max-w-[1024px] mx-auto place-content-center mb-8">
@@ -88,7 +81,7 @@ const Integrations = () => {
                              initial="initial"
                              whileInView="animate"
                              custom={index}
-                             className="relative w-[80px] h-[80px]" key={index}>
+                             className="relative w-[120px] h-[120px]" key={index}>
                                 <Image src={icon.src} fill alt=""/>
                             </motion.div>
                         )
@@ -100,7 +93,7 @@ const Integrations = () => {
                  initial="hidden"
                  whileInView="visible"
                  >
-                    <Button btnText="See all"/>
+                    <Button btnText="تواصل معنا"/>
                 </motion.div>
             </div>
         </section>

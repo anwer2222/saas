@@ -21,15 +21,17 @@ const Hero = () => {
                 opacity: textOpacity,
                 scale: textScale,
                 display: textDisplay
-             }}>
-              <h1 className="text-[60px] font-bold tracking-[-0.5px] leading-none max-w-[800px] xl:max-w-max">Bost your productivity Instanly</h1>
-              <p className="max-w-[680px] text-[20px] text-white/80 font-light px-8 xl:px-0 mb-2">Streamline tasks and manage your time effortlessly with our powerful, intuitive all in one productivity platform.</p>
-              <Button btnText="Join Today"/>
+              }}>
+              <h1 className="text-[60px] font-bold text-black tracking-[-0.5px] leading-none max-w-[800px] xl:max-w-max">رؤيتنا</h1>
+              <p className="max-w-[680px] text-[20px] text-black/80 font-light px-8 xl:px-0 mb-2">تطمح شركتنا إلى أن تكون الرائدة في السوق الإقليمي في مجال تخطيط سلامة الأحداث وإدارة سلامة الحشود، من
+                خلال تقديم حلول عالية الجودة ومبتكرة تتجاوز توقعات عملائنا، وتعزز الشراكات الطويلة الأمد، وتحدد معايير التميز في المجال.
+              </p>
+              <Button btnText="تواصل معنا"/>
             </motion.div>
             {/* img */}
             <motion.div className="hidden xl:flex w-full max-m-[960px] mx-auto h-[520px] bg-no-repeat sticky left-0 right-0"
                 style={{
-                    backgroundImage: "url('/hero/img.svg')",
+                    backgroundImage: "url('/hero/hero.png')",
                     backgroundSize: "contain",
                     backgroundPosition: "center",
                     top: imgTopPosition,

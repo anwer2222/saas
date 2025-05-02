@@ -5,28 +5,30 @@ import { fadeInOnScoll } from "@/motion/motionVariants";
 
 const brandsImages = [
     {
-        src: "/brands/brand-1.svg",
+        src: "/brands/img1.png",
     },
     {
-        src: "/brands/brand-2.svg",
+        src: "/brands/img2.png",
     },
     {
-        src: "/brands/brand-3.svg",
+        src: "/brands/img3.png",
     },
     {
-        src: "/brands/brand-4.svg",
+        src: "/brands/img4.png",
     },
     {
-        src: "/brands/brand-5.svg",
+        src: "/brands/img5.png",
     },
     {
-        src: "/brands/brand-6.svg",
+        src: "/brands/img6.png",
     },
     {
-        src: "/brands/brand-7.svg",
+        src: "/brands/img7.png",
     },
 
 ];
+
+const numps = Array.from({ length: 24 }, (_, i) => (i + 1).toString());
 
 const Brands = () => {
     return (
@@ -36,19 +38,19 @@ const Brands = () => {
               initial="hidden"
               whileInView="visible"
               className="container mx-auto overflow-hidden">
-                <p className="lead text-center mb-6">Join 200+ companies already growing</p>
+                <h2 className="h2 text-center mb-6 text-black">الرعاة الرسميين</h2>
                 <div className="flex">
                     <motion.div
                     initial={{x:0}}
                     animate={{x:"-100%"}}
-                    transition={{duration:20, repeat: Infinity, ease: "linear"}}
+                    transition={{duration:30, repeat: Infinity, ease: "linear"}}
                     className="flex"
                     >
 
-                        {brandsImages.map((item, index) =>{
+                        {numps.map((item, index) =>{
                             return (
-                                <div className="relative w-52 h-12 mr-12" key={index}>
-                                    <Image src={item.src} fill alt="" className="object-contain" />
+                                <div className="relative w-[120px] h-[120px] mr-12" key={index}>
+                                    <Image src={`/brands/img${item}.png`} fill alt="" className="object-contain" />
                                 </div>
                             )
                         })}
@@ -57,14 +59,14 @@ const Brands = () => {
                     <motion.div
                     initial={{x:0}}
                     animate={{x:"-100%"}}
-                    transition={{duration:20, repeat: Infinity, ease: "linear"}}
+                    transition={{duration:30, repeat: Infinity, ease: "linear"}}
                     className="flex"
                     >
 
-                        {brandsImages.map((item, index) =>{
+                        {numps.map((item, index) =>{
                             return (
-                                <div className="relative w-52 h-12 mr-12" key={index}>
-                                    <Image src={item.src} fill alt="" className="object-contain" />
+                                <div className="relative w-[120px] h-[120px] mr-12" key={index}>
+                                    <Image src={`/brands/img${item}.png`} fill alt="" className="object-contain" />
                                 </div>
                             )
                         })}

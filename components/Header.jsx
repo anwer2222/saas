@@ -7,7 +7,7 @@ const Header = () => {
               {/* logo */}
               <Logo/>
               {/* btn */}
-              <ButtonSecondary btnText="get started"/>
+              <ButtonSecondary btnText="سجل الان"/>
 
             </div>
         </header>

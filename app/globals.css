@@ -11,5 +11,5 @@ body {
 }
 
 .lead {
-  @apply text-lg font-light text-white
+  @apply text-lg font-light text-black
 }

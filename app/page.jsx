@@ -14,11 +14,13 @@ const Home = () => {
     <>
     <ReactLenis root>
      <Hero/>
-     <Brands />
+     
      <Features />
      <Integrations />
      <Testimonial />
+     
      <Trial />
+     <Brands />
      <Footer />
      {/* temporary div */}
      {/* <div className="h-[8000px]"></div> */}
