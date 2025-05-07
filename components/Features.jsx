@@ -7,43 +7,43 @@ import {FaRegCheckCircle} from "react-icons/fa"
 
 const featuresData = [
     {
-        imgSrc: "/features/img-1.svg",
-        title: "Smart Task Management",
-        description: "Organize and prioritize tasks effortlessly",
+        imgSrc: "/foc/img-1.png",
+        title: "كاميرات المراقبة",
+        description: "يتم ترتيب الكاميرات بشكل استراتيجي في مواقع محددة حول المكان لتغطية جميع الزوايا والتأكد من التقاط أي حدث غير مرغوب فيه أو نشاط مشبوه",
         highlights:[
-            "Set due dates and reminders.",
-            "Track progress and milestones.",
-            "Easily sort tasks by priority",
+            " توجيه الكاميرات نحو المداخل الرئيسية",
+            "والمناطق ذات الحركة المرورية العالية",
+            "لتوفير تغطية شاملة للأماكن الحيوية",
         ]
     },
     {
-        imgSrc: "/features/img-2.svg",
-        title: "Real-Time Collaboration",
-        description: "Collaborate with your team in real-time",
+        imgSrc: "/foc/img-2.png",
+        title: "إدارة المواصلات",
+        description: "لضمان وصول الضيوف والمشاركين إلى الموقع بسهولة وأمان، هذا يتضمن",
         highlights:[
-            "Set due dates and reminders.",
-            "Track progress and milestones.",
-            "Easily sort tasks by priority",
+            "توفير حافلات مكوكية أو سيارات فان لنقل الحضور",
+            "توفير وسائل نقل مريحة وفعالة من وإلى المطارات",
+            "توفير سيارات فاخرة (بي إم دبليو، مرسيدس)",
         ]
     },
     {
-        imgSrc: "/features/img-3.svg",
-        title: "Advantced Analytics",
-        description: "Gain insights to boost your productivity",
+        imgSrc: "/foc/img-3.png",
+        title: "إدارة المواقف",
+        description: "تهدف إدارة المواقف إلى توفير أماكن آمنة ومرتبة لوقوف السيارات",
         highlights:[
-            "Set due dates and reminders.",
-            "Track progress and milestones.",
-            "Easily sort tasks by priority",
+            "ويشمل ذلك توجيه السائقين إلى الأماكن المخصصة",
+            "وتنظيم الأماكن بشكل فعال",
+            "لاستيعاب عدد كبير من المركبات",
         ]
     },
     {
-        imgSrc: "/features/img-4.svg",
-        title: "Customizable Workspaces",
-        description: "Personalize your workspace for maximum efficiency",
+        imgSrc: "/foc/img-4.png",
+        title: "إدارة المرور",
+        description: "يقوم فريق متخصص للسلامة على الطرق بمتابعة الوضع بشكل دوري",
         highlights:[
-            "Set due dates and reminders.",
-            "Track progress and milestones.",
-            "Easily sort tasks by priority",
+            "وتقديم الإرشادات اللازمة للتأكد من الالتزام بمعايير السلامة",
+            "وتعتبر هذه الخدمة حلقة أساسية في سلسلة الإجراءات الآمنة ",
+            "والوقائية التي يجب اتباعها لضمان نجاح وسلامة الفعاليات",
         ]
     }
 
@@ -57,7 +57,7 @@ const Features = () => {
     useEffect(() => {setImgIndex(index);},[index])
 
     return (
-        <section className="text-white pt-32 relative">
+        <section className="text-black pt-32 relative">
             <div className="container mx-auto">
                 <div className="flex gap-16">
                     {/* img */}
@@ -70,7 +70,7 @@ const Features = () => {
                           ease:[0.6, -0.05, 0.01,0.99],
                           delay: 0.2
                       }}
-                      className="hidden xl:flex justify-center flex-1 w-full h-[480px] sticky top-[calc(50%-240px)]"
+                      className="hidden xl:flex justify-center flex-1 w-full h-[420px] sticky top-[calc(50%-240px)]"
                     >
                         <div className="relative w-full h-full">
                             <Image
@@ -90,17 +90,17 @@ const Features = () => {
                                   initial={{opacity:0}}
                                   whileInView={{opacity:1}}
                                   viewport={{amount:"all"}}
-                                  key={itemIndex} className="w-full h-auto xl:h-[480px] flex items-center">
+                                  key={itemIndex} className="w-full h-auto xl:h-[480px] flex items-center text-right pr-20">
                                     <div className="w-[80vw] xl:w-auto mx-auto xl:mx-0">
-                                        <h2 className="h2 mb-4">{item.title}</h2>
-                                        <p className="lead mb-9">{item.description}</p>
+                                        <h2 className="h2 mb-4 text-black">{item.title}</h2>
+                                        <p className="lead mb-9 text-black">{item.description}</p>
                                         {/* highlight */}
-                                        <div className="flex flex-col gap-5">
+                                        <div className="flex flex-col gap-5 items-end">
                                             {item.highlights.map((highlight, index) => {
                                                 return (
-                                                    <div key={index} className="flex items-center gap-4">
-                                                        <FaRegCheckCircle className="text-accent_secondary text-2xl"/>
+                                                    <div key={index} className="flex items-center gap-4 text-right">
                                                         <p>{highlight}</p>
+                                                        <FaRegCheckCircle className="text-[#1a4f42] text-2xl"/>
                                                     </div>
                                                 )
                                             })}

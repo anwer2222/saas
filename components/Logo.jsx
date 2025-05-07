@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Logo = () => {
     return (
-        <Link href="/" className="relative w-[148px] h-[22px] flex">
-            <Image src="/logo.svg" fill alt="" className="object-contain"/>
+        <Link href="/" className="relative w-[150px] h-[150px] flex">
+            <Image src="/foc/logo_06.png" fill alt="" className="object-contain"/>
         </Link>
     )
 }
