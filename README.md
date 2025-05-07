@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 npx create-next-app@14.2.7 .
 npm i framer-motion lenis react-icons
+ngrok http http://localhost:3000

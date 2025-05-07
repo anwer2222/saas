@@ -35,7 +35,7 @@ const icons = [
 
 const Footer = () => {
     return (
-        <footer className="bg-[#ceaf67] my-24">
+        <footer className="bg-[#1e4f43] mt-24">
             <div className="container mx-auto  ">
                 <div className="flex flex-col xl:flex-row items-center gap-12 xl:justify-between">
                     {/* socials */}
@@ -58,7 +58,7 @@ const Footer = () => {
                        </Link>
                     </div>
                     {/* copyright */}
-                    <p className="flex-1 flex text-black justify-end font-light mb-8 xl:mb-0"> &copy; 2025 FUTURE OF CREATIVITY. All rights reserved.</p>
+                    <p className="flex-1 flex text-white justify-end font-light mb-8 xl:mb-0"> &copy; 2025 FUTURE OF CREATIVITY. All rights reserved.</p>
                 </div>
             </div>
         </footer>

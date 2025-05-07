@@ -70,7 +70,7 @@ const Features = () => {
                           ease:[0.6, -0.05, 0.01,0.99],
                           delay: 0.2
                       }}
-                      className="hidden xl:flex justify-center flex-1 w-full h-[350px] sticky top-[calc(50%-240px)]"
+                      className="hidden xl:flex justify-center flex-1 w-full h-[420px] sticky top-[calc(50%-240px)]"
                     >
                         <div className="relative w-full h-full">
                             <Image
@@ -90,7 +90,7 @@ const Features = () => {
                                   initial={{opacity:0}}
                                   whileInView={{opacity:1}}
                                   viewport={{amount:"all"}}
-                                  key={itemIndex} className="w-full h-auto xl:h-[480px] flex items-center text-right">
+                                  key={itemIndex} className="w-full h-auto xl:h-[480px] flex items-center text-right pr-20">
                                     <div className="w-[80vw] xl:w-auto mx-auto xl:mx-0">
                                         <h2 className="h2 mb-4 text-black">{item.title}</h2>
                                         <p className="lead mb-9 text-black">{item.description}</p>
